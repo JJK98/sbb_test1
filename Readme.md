@@ -39,7 +39,7 @@ private static final long serialVersionUID = 1L;(Exception 부분)
 - ...
 
 ## JPA의 장점과 단점
-- ...
+- Java Persistence API라는 뜻으로  
 
 ## HTTP GET 요청과 POST 요청의 차이
 - GET 요청은 주소록에 정보가 다 남고 post는 http에 body가없다.  
