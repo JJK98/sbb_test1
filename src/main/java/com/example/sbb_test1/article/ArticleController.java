@@ -2,9 +2,7 @@ package com.example.sbb_test1.article;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
 
 import java.util.List;
@@ -31,8 +29,14 @@ public class ArticleController {
         return "article_detail";
     }
     @GetMapping("/create")
-    public String cretae(){
+    public String articleCreate(){
         return "article_form";
+    }
+
+    @PostMapping("/create")
+    public String articleCreate(@RequestParam(value="title") String title, @RequestParam(value="content") String content) {
+        this.articleService.create(title, content);
+        return "redirect:/article/list"; // 질문 저장후 질문목록으로 이동
     }
 
 
