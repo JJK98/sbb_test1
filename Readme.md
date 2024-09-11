@@ -19,7 +19,8 @@ private static final long serialVersionUID = 1L;(Exception 부분)
 2-10부턴 의존 
 
 부트스트랩의 기존 양식 html 코드부분
-4차요구사항 점프투 부트스트랩 따라가다 완료
+4차요구사항 점프투 
+부트스트랩 따라가다 완료
 
 
 ## MVC 패턴
